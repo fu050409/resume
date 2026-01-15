@@ -91,6 +91,17 @@
   date[ 2023 年 09 月 - 今 ],
 )
 
+== #icons.fa-work 实习经历
+
+#item(
+  [ *字节跳动 * ],
+  [ *前端开发* ],
+  date[ 2025 年 06 月 – 2025 年 09 月 ],
+)
+#tech[ 抖音生活服务AI应用 ]
+
+负责抖音生活服务AI应用的前端开发工作，包括AI旅行规划师、AI问答等产品，参与AI应用的功能设计与实现，优化用户体验。
+
 == #icons.fa-code 项目经历
 
 #item(
@@ -102,29 +113,30 @@
   date[ 2024 年 06 月 – 今 ],
 )
 
-#tech[ Rust Node.js 前端工具链 ]
+#tech[ Rust Node.js 前端基建 ]
 
 使用Rust编写的极速的前端编译器。作为*核心贡献者*长期参与Farm维护，使用CodSpeed细粒度进行基准测试和性能优化，同时为Farm生态做出了重要贡献。
 
 #item(
   box({
+    [ *MateChat* ]
     link(
-      "https://github.com/DevCloudFE/vue-devui",
-      [ *DevUI Vue* ],
+      "https://github.com/DevCloudFE/matechat-react",
+      [ *React* ]
     )
     [ & ]
     link(
       "https://gitcode.com/DevCloudFE/MateChat",
-      [ *MateChat* ]
+      [ *Vue* ]
     )
   }),
   [ *华为开源项目* ],
   date[ 2024 年 05 月 – 今 ],
 )
 
-#tech[ Vue.js 前端框架 SSR ]
+#tech[ React Vue.js 企业级组件库 AI应用 ]
 
-DevUI Vue是由华为DevUI主导的Vue3开源组件库，是面向企业中后台产品的开源前端解决方案。MateChat是前端智能化场景解决方案UI库，让用户轻松构建AI应用。本人作为*项目维护者*参与DevUI Vue和MateChat的组件、文档站点的维护。
+MateChat是前端智能化场景解决方案UI库，让用户轻松构建AI应用。本人作为*项目负责人*参与MateChat React的组件、文档站点的维护，为React版本的MateChat兼容Shadcn生态体系。与此同时，本人作为*项目维护者*参与MateChat Vue的开发。
 
 #item(
   link(
@@ -198,21 +210,8 @@ DevUI Vue是由华为DevUI主导的Vue3开源组件库，是面向企业中后�
 
 #v(0.5em)
 
-- Moonstone基于上述Oblivion协议库实现全双工加密数据传输，对大文件自动采取分片传输，使用新一代数据库#link("https://surrealdb.com/", "SurrealDB")。
-- 客户端页面基于Vue.js，以社群为通讯单元，聊天中支持使用Markdown语法，针对用户注入等漏洞进行防御。使用Tauri 2框架集成前端，能够实现在所有平台编译部署。
-
-#item(
-  link(
-    "https://github.com/Couplatis/nmode/",
-    [ *并行Neural Memory ODE* ]
-  ),
-  [ *学术开源项目* ],
-  date[ 2024 年 08 月 - 2025 年 03 月 ]
-)
-
-#tech[ Python PyTorch 并行计算 神经网络 神经常微分方程 ]
-
-#link("https://www.swpu.edu.cn/lxy/info/2671/6215.htm", "徐芳")教授指导的学术项目，基于神经记忆常微分方程（Neural Memory ODE）模型实现的GPU并行化运算的神经网络。使用引入指数的非线性项，实现在CIFAR10数据集上在10个训练epochs内收敛。
+- Moonstone基于上述Oblivion协议库实现全双工加密数据传输。
+- 客户端页面基于Vue.js，以社群为通讯单元，持使用Markdown语法。使用Tauri 2框架集成前端，支持跨平台编译。
 
 == #icons.fa-building-columns 校园经历
 

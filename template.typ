@@ -158,6 +158,8 @@
   let len = items_arr.len()
   let columns = items_arr.map(item => 100% / len)
 
+  set text(size: 8.5pt)
+
   v(0.2em)
   grid(
     columns: columns,
