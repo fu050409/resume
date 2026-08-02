@@ -4,7 +4,6 @@ output  = "resume.pdf"
 
 [build]
 strict = false
-font-paths = ["assets/fonts/cascadia-mono/CascadiaMono-VariableFont_wght.ttf"]
 
 [config]
-font = "Cascadia Mono"
+# Override any values declared by the selected template's meta.toml[config].
