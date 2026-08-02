@@ -6,4 +6,5 @@ output  = "resume.pdf"
 strict = false
 
 [config]
-# Override any values declared by the selected template's meta.toml[config].
+font-size = 9.5
+contact-size = 8.5
