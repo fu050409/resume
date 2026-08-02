@@ -26,10 +26,8 @@ photo = "assets/profile.jpg"
 [[skills]]
 name = "语言"
 items = [
-  { name = "Rust", level = "精通" },
-  { name = "Python", level = "精通" },
-  { name = "TypeScript", level = "精通" },
-  { name = "JavaScript", level = "精通" },
+  { name = "Rust / Python", level = "精通" },
+  { name = "TypeScript / JavaScript", level = "精通" },
   { name = "C", level = "熟悉" },
 ]
 
@@ -37,30 +35,23 @@ items = [
 name = "前端"
 items = [
   { name = "HTML5", level = "精通" },
-  { name = "Node.js", level = "精通" },
-  { name = "Vue.js", level = "精通" },
+  { name = "Node.js / Vue.js", level = "精通" },
   { name = "Rust WebAssembly", level = "精通" },
-  { name = "TailwindCSS", level = "熟悉" },
-  { name = "UnoCSS", level = "熟悉" },
+  { name = "TailwindCSS / UnoCSS", level = "熟悉" },
   { name = "React", level = "熟悉" },
 ]
 
 [[skills]]
 name = "后端"
 items = [
-  { name = "Django", level = "精通" },
-  { name = "Flask", level = "精通" },
-  { name = "FastAPI", level = "精通" },
-  { name = "Rocket", level = "熟悉" },
-  { name = "Actix", level = "熟悉" },
-  { name = "Axum", level = "熟悉" },
+  { name = "Django / Flask / FastAPI", level = "精通" },
+  { name = "Rocket / Actix / Axum", level = "熟悉" },
 ]
 
 [[skills]]
 name = "深度学习"
 items = [
-  { name = "PyTorch", level = "熟悉" },
-  { name = "TensorFlow", level = "熟悉" },
+  { name = "PyTorch / TensorFlow", level = "熟悉" },
 ]
 
 [[skills]]
@@ -80,16 +71,6 @@ subtitle = "前端开发"
 department = "抖音生活服务 AI 应用"
 period = "2025 年 06 月 – 2025 年 09 月"
 body = "负责抖音生活服务 AI 应用的前端开发工作，包括 AI 旅行规划师、AI 问答等产品，参与 AI 应用的功能设计与实现，优化用户体验。"
-
-[[experience]]
-title = "西南石油大学校 ACM 实验室"
-subtitle = "负责人"
-period = "2024 年 08 月 – 今"
-
-[[experience]]
-title = "西南石油大学开源协会"
-subtitle = "创办者"
-period = "2024 年 05 月 – 今"
 
 [[projects]]
 title = "Farm 前端编译器"
