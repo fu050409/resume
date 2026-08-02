@@ -1,0 +1,187 @@
+schema = "typst-resume/1.0"
+
+[basics]
+name = "伏西雨"
+photo = "assets/profile.jpg"
+
+  [[basics.contacts]]
+  icon = "phone"
+  text = "(+86) 15982201158"
+
+  [[basics.contacts]]
+  icon = "github"
+  text = "GitHub@fu050409"
+  link = "https://github.com/fu050409"
+
+  [[basics.contacts]]
+  icon = "email"
+  text = "fu050409@163.com"
+  link = "mailto:fu050409@163.com"
+
+  [[basics.contacts]]
+  icon = "email"
+  text = "fu050409@gmail.com"
+  link = "mailto:fu050409@gmail.com"
+
+[[skills]]
+name = "语言"
+items = [
+  { name = "Rust", level = "精通" },
+  { name = "Python", level = "精通" },
+  { name = "TypeScript", level = "精通" },
+  { name = "JavaScript", level = "精通" },
+  { name = "C", level = "熟悉" },
+]
+
+[[skills]]
+name = "前端"
+items = [
+  { name = "HTML5", level = "精通" },
+  { name = "Node.js", level = "精通" },
+  { name = "Vue.js", level = "精通" },
+  { name = "Rust WebAssembly", level = "精通" },
+  { name = "TailwindCSS", level = "熟悉" },
+  { name = "UnoCSS", level = "熟悉" },
+  { name = "React", level = "熟悉" },
+]
+
+[[skills]]
+name = "后端"
+items = [
+  { name = "Django", level = "精通" },
+  { name = "Flask", level = "精通" },
+  { name = "FastAPI", level = "精通" },
+  { name = "Rocket", level = "熟悉" },
+  { name = "Actix", level = "熟悉" },
+  { name = "Axum", level = "熟悉" },
+]
+
+[[skills]]
+name = "深度学习"
+items = [
+  { name = "PyTorch", level = "熟悉" },
+  { name = "TensorFlow", level = "熟悉" },
+]
+
+[[skills]]
+name = "DevOps"
+items = [
+  { name = "GitHub Actions", level = "熟悉" },
+]
+
+[[education]]
+title = "西南石油大学"
+subtitle = "机电工程学院 智能感知工程"
+period = "2023 年 09 月 – 今"
+
+[[experience]]
+title = "字节跳动"
+subtitle = "前端开发"
+department = "抖音生活服务 AI 应用"
+period = "2025 年 06 月 – 2025 年 09 月"
+body = "负责抖音生活服务 AI 应用的前端开发工作，包括 AI 旅行规划师、AI 问答等产品，参与 AI 应用的功能设计与实现，优化用户体验。"
+
+[[experience]]
+title = "西南石油大学校 ACM 实验室"
+subtitle = "负责人"
+period = "2024 年 08 月 – 今"
+
+[[experience]]
+title = "西南石油大学开源协会"
+subtitle = "创办者"
+period = "2024 年 05 月 – 今"
+
+[[projects]]
+title = "Farm 前端编译器"
+subtitle = "社区开源项目"
+period = "2024 年 06 月 – 今"
+stack = [ "Rust", "Node.js", "前端基建" ]
+links = [ { label = "GitHub", href = "https://github.com/farm-fe/farm/" } ]
+body = "使用 Rust 编写的极速前端编译器。作为核心贡献者长期参与 Farm 维护，使用 CodSpeed 细粒度进行基准测试和性能优化，同时为 Farm 生态做出了重要贡献。"
+
+[[projects]]
+title = "MateChat"
+subtitle = "华为开源项目"
+period = "2024 年 05 月 – 今"
+stack = [ "React", "Vue.js", "企业级组件库", "AI 应用" ]
+links = [
+  { label = "React", href = "https://github.com/DevCloudFE/matechat-react" },
+  { label = "Vue", href = "https://gitcode.com/DevCloudFE/MateChat" },
+]
+body = "MateChat 是前端智能化场景解决方案 UI 库，让用户轻松构建 AI 应用。本人作为项目负责人参与 MateChat React 的组件、文档站点维护，为 React 版本兼容 Shadcn 生态体系；同时作为项目维护者参与 MateChat Vue 的开发。"
+
+[[projects]]
+title = "AlgoHub 算法工坊"
+subtitle = "实验室开源项目"
+period = "2024 年 11 月 – 2024 年 12 月"
+stack = [ "Rust", "ACM/OI", "Linux", "前端", "后端", "数据库" ]
+links = [ { label = "GitHub", href = "https://github.com/swpu-acm/" } ]
+body = "使用 Rust 编写的高并发算法竞赛平台，能够评测用户提交的代码并返回结果，同时提供代码版本管理与托管。本人为项目发起者。"
+highlights = [
+  "项目包含客户端（包括前端）、后端及代码评测服务器三部分，使用 Rust 编写，使用 tokio 作为异步驱动核心。",
+  "评测服务器中，为部分高延时操作手动实现 Futures 以提高性能，基于 Seccomp 实现用户代码的沙箱化运行，使用 libc 拦截系统调用，确保评测服务器安全。",
+  "项目使用 Rocket 作为 Web 框架，使用 SurrealDB 作为数据库，使用 Redis 作为缓存层。",
+]
+
+[[projects]]
+title = "Infini & IPM"
+subtitle = "社区开源项目"
+period = "2024 年 06 月 – 2024 年 12 月"
+stack = [ "Python", "事件驱动", "包管理器", "流式数据" ]
+links = [
+  { label = "Infini", href = "https://github.com/HydroRoll-Team/infini" },
+  { label = "IPM", href = "https://github.com/HydroRoll-Team/ipm" },
+]
+body = "面向内容生成的 Python 输入输出流框架及其包管理器，本人为项目核心贡献者。"
+
+[[projects]]
+title = "Oblivion 加密传输协议"
+subtitle = "个人开源项目"
+period = "2023 年 10 月 – 2024 年 06 月"
+stack = [ "Rust", "网络", "高并发", "服务端框架", "传输协议", "加密算法" ]
+links = [ { label = "GitHub", href = "https://github.com/noctisynth/oblivion-rust" } ]
+body = "全双工端到端加密传输协议，使用 Rust 编写客户端与服务端框架。"
+highlights = [
+  "项目用于作为 WebSocket 的替代协议，能够在 1ms 以内实现本地回环握手；握手过程中基于 ECDHE 和 HKDF 进行密钥共享并生成 AES 密钥，长连接会话持续使用该密钥双向加密，并基于 MTU 动态分块发送数据包。",
+  "Oblivion 使用 tokio 作为异步驱动核心，使用 ring 作为加密原语库；基准测试显示其能够实现服务端异步安全下的高并发运行。",
+]
+
+[[projects]]
+title = "Moonstone 月长石通讯"
+subtitle = "个人开源项目"
+period = "2023 年 11 月 – 2024 年 05 月"
+stack = [ "Rust", "Tauri", "前端", "后端", "桌面端", "去中心化" ]
+links = [ { label = "GitHub", href = "https://github.com/noctisynth/Moonstone" } ]
+body = "面向通讯安全的去中心化端到端加密即时通讯软件。"
+highlights = [
+  "Moonstone 基于 Oblivion 协议库实现全双工加密数据传输。",
+  "客户端页面基于 Vue.js，以社群为通讯单元，支持 Markdown 语法；使用 Tauri 2 集成前端并支持跨平台编译。",
+]
+
+[[awards]]
+title = "国家级大创项目验收成功"
+date = "2024"
+
+[[awards]]
+title = "多个省级大创项目验收成功"
+date = "2024"
+
+[[awards]]
+title = "二等奖学金"
+date = "2023"
+
+[[awards]]
+title = "蓝桥杯 Python 省级一等奖"
+date = "2023"
+
+[[awards]]
+title = "三等奖学金"
+date = "2023"
+
+[[awards]]
+title = "Python 计算机二级"
+date = "2023"
+
+[meta]
+template = "default"
+locale = "zh-CN"
