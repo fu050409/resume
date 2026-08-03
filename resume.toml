@@ -72,6 +72,13 @@ department = "抖音生活服务 AI 应用"
 period = "2025 年 06 月 – 2025 年 09 月"
 body = "负责抖音生活服务 AI 应用的前端开发工作，包括 AI 旅行规划师、AI 问答等产品，参与 AI 应用的功能设计与实现，优化用户体验。"
 
+[[experience]]
+title = "字节跳动"
+subtitle = "全栈开发"
+department = "抖音生活服务推荐 Feed"
+period = "2026 年 04 月 – 2026 年 09 月"
+body = "负责生活服务发布侧前端/安卓维护工作以及 AI Agent 相关工作，包括自动化周报 ReAct Agent 以及 Design-to-Code 相关基础工程建设开发。"
+
 [[projects]]
 title = "Farm 前端编译器"
 subtitle = "社区开源项目"
