@@ -1,0 +1,18 @@
+[branches]
+base = "main"
+release = "release"
+
+[tags]
+chore = "Chores"
+feat = "New Features"
+fix = "Bug Fixes"
+perf = "Performance Improvements"
+refactor = "Refactors"
+
+[packages."@fu050409/resume"]
+path = "."
+resolver = "nodejs"
+assets = ["resume.pdf"]
+
+[resolver.nodejs.pre-check]
+url = "https://registry.npmjs.org/{{ package.name }}/{{ package.version }}"

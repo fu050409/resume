@@ -1,17 +1,27 @@
-name: Build resume
-
+name: Semifold CI
 on:
   push:
     branches: [main]
 
+env:
+  CLICOLOR_FORCE: 1
+
 permissions:
-  contents: read
+  id-token: write
+  contents: write
+  pull-requests: write
 
 jobs:
   build:
+    name: Version or Publish
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Setup Semifold
+        uses: noctisynth/setup-semifold@main
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: canary
@@ -21,9 +31,14 @@ jobs:
           key: ${{ runner.os }}-typsume-fonts-${{ hashFiles('typsume.config.toml') }}
           restore-keys: |
             ${{ runner.os }}-typsume-fonts-
-      - run: bunx @typsume/cli@latest build resume.toml --output resume.pdf --allow-downloads
+      - name: Build Resume
+        run: bunx @typsume/cli@latest build resume.toml --output resume.pdf --allow-downloads
       - uses: actions/upload-artifact@v7
         with:
           path: resume.pdf
           archive: false
           if-no-files-found: error
+      - name: Semifold CI
+        run: semifold ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
