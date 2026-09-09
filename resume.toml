@@ -32,32 +32,34 @@ items = [
 ]
 
 [[skills]]
-name = "前端"
+name = "前端与跨端"
 items = [
-  { name = "HTML5", level = "精通" },
-  { name = "Node.js / Vue.js", level = "精通" },
-  { name = "Rust WebAssembly", level = "精通" },
-  { name = "TailwindCSS / UnoCSS", level = "熟悉" },
-  { name = "React", level = "熟悉" },
+  { name = "React / Vue.js", level = "精通" },
+  { name = "Node.js", level = "精通" },
+  { name = "Tailwind CSS / UnoCSS", level = "熟悉" },
+  { name = "Tauri", level = "熟悉" },
+  { name = "WebAssembly", level = "精通" },
 ]
 
 [[skills]]
 name = "后端"
 items = [
-  { name = "Django / Flask / FastAPI", level = "精通" },
-  { name = "Rocket / Actix / Axum", level = "熟悉" },
+  { name = "Flask / FastAPI", level = "精通" },
+  { name = "Rocket / Axum", level = "熟悉" },
 ]
 
 [[skills]]
-name = "深度学习"
+name = "AI 应用"
 items = [
-  { name = "PyTorch / TensorFlow", level = "熟悉" },
+  { name = "Agent Harness / ReAct", level = "熟悉" },
+  { name = "工具调用与流式交互", level = "熟悉" },
 ]
 
 [[skills]]
-name = "DevOps"
+name = "工程化"
 items = [
-  { name = "GitHub Actions", level = "熟悉" },
+  { name = "构建与性能优化", level = "熟悉" },
+  { name = "Monorepo / CI/CD", level = "熟悉" },
 ]
 
 [[education]]
@@ -70,14 +72,14 @@ title = "字节跳动"
 subtitle = "全栈开发实习生"
 department = "抖音生活服务 - 推荐 Feed"
 period = "2026 年 04 月 – 至今"
-body = "负责生活服务内容发布侧的前端及 Android 业务开发与维护。参与自动化周报 ReAct Agent 的设计与开发，支持周报生成流程自动化。负责 Design-to-Code 工程规范设计及配套 Agent 基础工程建设。"
+body = "负责生活服务内容发布侧的**前端及 Android 业务开发与维护**。参与**自动化周报 ReAct Agent** 的设计与开发，支持周报生成流程自动化。负责 **Design-to-Code 工程规范设计**及配套 **Agent 基础工程建设**。"
 
 [[experience]]
 title = "字节跳动"
 subtitle = "前端开发实习生"
 department = "抖音生活服务 - AI 应用"
 period = "2025 年 06 月 – 2025 年 09 月"
-body = "参与 AI 旅行规划师、AI 问答等产品的功能设计与前端开发，完成业务功能与交互实现。负责 AI 规划师的性能优化与基础工程优化，改善产品体验与工程质量。"
+body = "参与 **AI 旅行规划师、AI 问答**等产品的功能设计与前端开发，完成业务功能与交互实现。负责 AI 规划师的**性能优化与基础工程优化**，改善产品体验与工程质量。"
 
 [[projects]]
 title = "Farm 前端编译器"
@@ -96,7 +98,26 @@ links = [
   { label = "React", href = "https://github.com/DevCloudFE/matechat-react" },
   { label = "Vue", href = "https://gitcode.com/DevCloudFE/MateChat" },
 ]
-body = "MateChat 是前端智能化场景解决方案 UI 库，让用户轻松构建 AI 应用。本人作为项目负责人参与 MateChat React 的组件、文档站点维护，为 React 版本兼容 Shadcn 生态体系；同时作为项目维护者参与 MateChat Vue 的开发。"
+body = "AI 对话组件库，支持 Vue 与 React。作为 **Vue 版本维护者**参与开发；**发起并负责 React 版本**，推进组件与文档站点建设，并兼容 shadcn/ui 生态。"
+
+[[projects]]
+title = "Semifold"
+subtitle = "作者 / 开源项目"
+period = "2025 年 08 月 – 今"
+stack = [ "Rust", "Monorepo", "依赖图", "版本与发布管理" ]
+links = [ { label = "GitHub", href = "https://github.com/noctisynth/semifold" } ]
+body = "作为**项目作者**，开发面向跨语言 Monorepo 的版本与发布管理工具，统一管理 Rust、Node.js、Python 与 C++ 软件包。基于**工作区依赖图与变更集**联动更新版本、内部依赖和 Changelog，并**按依赖顺序发布**；集成 GitHub Actions 自动维护发布分支与 PR。"
+
+[[projects]]
+title = "Armillae / Loreloom"
+subtitle = "工作室开源项目"
+period = "2026 年 08 月 – 今"
+stack = [ "Rust", "LLM", "Agent Harness", "Bevy ECS", "TUI" ]
+links = [
+  { label = "Armillae", href = "https://github.com/mmstudio-games/armillae" },
+  { label = "Loreloom", href = "https://github.com/mmstudio-games/loreloom" },
+]
+body = "妄言真意游戏工作室下的两个开源项目，均由本人创作。**Armillae** 提供跨 Provider 的 LLM Bridge、流式协议与**类型安全 Tool 执行**，通过 Rust 过程宏统一同步与异步工具定义。**Loreloom** 基于 Armillae 构建叙事游戏，实现 **Agent Harness 与 Narrator/NPC 调度**，结合 Bevy ECS 结构化世界状态、持久化存档和 TUI 交互。"
 
 [[projects]]
 title = "AlgoHub 算法工坊"

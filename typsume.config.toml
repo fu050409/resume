@@ -1,5 +1,5 @@
 # typsume.config.toml
-template = "default"
+template = "./templates/resume"
 output  = "resume.pdf"
 
 [build]
