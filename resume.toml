@@ -67,17 +67,17 @@ period = "2023 年 09 月 – 今"
 
 [[experience]]
 title = "字节跳动"
-subtitle = "前端开发"
-department = "抖音生活服务 AI 应用"
-period = "2025 年 06 月 – 2025 年 09 月"
-body = "负责抖音生活服务 AI 应用的前端开发工作，包括 AI 旅行规划师、AI 问答等产品，参与 AI 应用的功能设计与实现，优化用户体验。"
+subtitle = "全栈开发实习生"
+department = "抖音生活服务 - 推荐 Feed"
+period = "2026 年 04 月 – 至今"
+body = "负责生活服务内容发布侧的前端及 Android 业务开发与维护。参与自动化周报 ReAct Agent 的设计与开发，支持周报生成流程自动化。负责 Design-to-Code 工程规范设计及配套 Agent 基础工程建设。"
 
 [[experience]]
 title = "字节跳动"
-subtitle = "全栈开发"
-department = "抖音生活服务推荐 Feed"
-period = "2026 年 04 月 – 2026 年 09 月"
-body = "负责生活服务发布侧前端/安卓维护工作以及 AI Agent 相关工作，包括自动化周报 ReAct Agent 以及 Design-to-Code 相关基础工程建设开发。"
+subtitle = "前端开发实习生"
+department = "抖音生活服务 - AI 应用"
+period = "2025 年 06 月 – 2025 年 09 月"
+body = "参与 AI 旅行规划师、AI 问答等产品的功能设计与前端开发，完成业务功能与交互实现。负责 AI 规划师的性能优化与基础工程优化，改善产品体验与工程质量。"
 
 [[projects]]
 title = "Farm 前端编译器"
