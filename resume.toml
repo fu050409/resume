@@ -71,7 +71,7 @@ period = "2023 年 09 月 – 今"
 title = "字节跳动"
 subtitle = "全栈开发实习生"
 department = "抖音生活服务 - 推荐 Feed"
-period = "2026 年 04 月 – 至今"
+period = "2026 年 04 月 – 2026 年 09 月"
 body = "负责生活服务内容发布侧的**前端及 Android 业务开发与维护**。参与**自动化周报 ReAct Agent** 的设计与开发，支持周报生成流程自动化。负责 **Design-to-Code 工程规范设计**及配套 **Agent 基础工程建设**。"
 
 [[experience]]
@@ -87,7 +87,7 @@ subtitle = "社区开源项目"
 period = "2024 年 06 月 – 今"
 stack = [ "Rust", "Node.js", "前端基建" ]
 links = [ { label = "GitHub", href = "https://github.com/farm-fe/farm/" } ]
-body = "使用 Rust 编写的极速前端编译器。作为核心贡献者长期参与 Farm 维护，使用 CodSpeed 细粒度进行基准测试和性能优化，同时为 Farm 生态做出了重要贡献。"
+body = "作为**核心贡献者**参与 Rust 前端构建工具及官方插件生态开发。推进**性能优化**，通过**短字符串内联存储**减少堆分配，优化哈希容器，并基于 **Rust + Rayon** 实现构建产物的并行写入。参与文件监听、预览服务及脚手架重构，完成 **WASM 插件重写**，新增压缩与 Vuetify 插件。"
 
 [[projects]]
 title = "MateChat"
@@ -98,11 +98,11 @@ links = [
   { label = "React", href = "https://github.com/DevCloudFE/matechat-react" },
   { label = "Vue", href = "https://gitcode.com/DevCloudFE/MateChat" },
 ]
-body = "AI 对话组件库，支持 Vue 与 React。作为 **Vue 版本维护者**参与开发；**发起并负责 React 版本**，推进组件与文档站点建设，并兼容 shadcn/ui 生态。"
+body = "华为开源社区的 **AI 交互组件库**，支持 Vue 与 React。作为 **Vue 版本维护者**参与开发；**发起并负责 React 版本**，推进组件与文档站点建设，并兼容 shadcn/ui 生态。"
 
 [[projects]]
 title = "Semifold"
-subtitle = "作者 / 开源项目"
+subtitle = "个人开源项目"
 period = "2025 年 08 月 – 今"
 stack = [ "Rust", "Monorepo", "依赖图", "版本与发布管理" ]
 links = [ { label = "GitHub", href = "https://github.com/noctisynth/semifold" } ]
@@ -117,7 +117,23 @@ links = [
   { label = "Armillae", href = "https://github.com/mmstudio-games/armillae" },
   { label = "Loreloom", href = "https://github.com/mmstudio-games/loreloom" },
 ]
-body = "妄言真意游戏工作室下的两个开源项目，均由本人创作。**Armillae** 提供跨 Provider 的 LLM Bridge、流式协议与**类型安全 Tool 执行**，通过 Rust 过程宏统一同步与异步工具定义。**Loreloom** 基于 Armillae 构建叙事游戏，实现 **Agent Harness 与 Narrator/NPC 调度**，结合 Bevy ECS 结构化世界状态、持久化存档和 TUI 交互。"
+body = "在妄言真意游戏工作室**设计并开发 Armillae 与 Loreloom**。Armillae 提供**跨模型服务的 LLM Bridge**，统一消息、流式响应与工具调用接口，并支持**类型安全的工具定义与执行**；Loreloom 面向 **AI Native 叙事游戏**，实现 **Agent Harness、Multi-Agent 调度及上下文与记忆管理**，以 **Bevy ECS** 管理结构化游戏世界，通过工具调用将 Agent 决策转化为游戏状态变更，连接 AI 推理与游戏逻辑。"
+
+[[projects]]
+title = "Toasty SurrealDB 驱动"
+subtitle = "社区开源项目"
+period = "2026 年 08 月 – 今"
+stack = [ "Rust", "Toasty", "SurrealDB", "数据库驱动" ]
+links = [ { label = "GitHub", href = "https://github.com/noctisynth/toasty-driver-surreal" } ]
+body = "为 Rust ORM Toasty 开发 **SurrealDB 驱动**，将键值与文档操作映射为 SurrealQL，支持**显式事务、原生 JSON、SurrealKV 持久化与数据库迁移**，并参与 **Toasty 上游驱动扩展支持的完善**。"
+
+[[projects]]
+title = "DropOut"
+subtitle = "社区开源项目"
+period = "2026 年 01 月 – 今"
+stack = [ "React", "TypeScript", "Tauri", "Rust" ]
+links = [ { label = "GitHub", href = "https://github.com/HydroRoll-Team/DropOut" } ]
+body = "参与基于 **React、Tauri 与 Rust** 的 Minecraft 启动器开发，重构实例相关 UI、路由与状态组织，拆分整合包模块并提取 CurseForge API；推进 **Monorepo 工程组织与自动化发布**，维护前端与桌面端构建链路。"
 
 [[projects]]
 title = "AlgoHub 算法工坊"
@@ -125,47 +141,75 @@ subtitle = "实验室开源项目"
 period = "2024 年 11 月 – 2024 年 12 月"
 stack = [ "Rust", "ACM/OI", "Linux", "前端", "后端", "数据库" ]
 links = [ { label = "GitHub", href = "https://github.com/swpu-acm/" } ]
-body = "使用 Rust 编写的高并发算法竞赛平台，能够评测用户提交的代码并返回结果，同时提供代码版本管理与托管。本人为项目发起者。"
-highlights = [
-  "项目包含客户端（包括前端）、后端及代码评测服务器三部分，使用 Rust 编写，使用 tokio 作为异步驱动核心。",
-  "评测服务器中，为部分高延时操作手动实现 Futures 以提高性能，基于 Seccomp 实现用户代码的沙箱化运行，使用 libc 拦截系统调用，确保评测服务器安全。",
-  "项目使用 Rocket 作为 Web 框架，使用 SurrealDB 作为数据库，使用 Redis 作为缓存层。",
-]
+body = "**发起并开发**基于 Rust 的算法竞赛平台，覆盖前端、业务后端与代码评测服务，支持**代码提交与自动评测**。基于 **Tokio** 组织异步评测任务，使用 **Seccomp** 限制用户代码的系统调用；采用 **Rocket 与 SurrealDB** 构建业务服务与数据存储层。"
 
 [[projects]]
-title = "Infini & IPM"
-subtitle = "社区开源项目"
-period = "2024 年 06 月 – 2024 年 12 月"
-stack = [ "Python", "事件驱动", "包管理器", "流式数据" ]
-links = [
-  { label = "Infini", href = "https://github.com/HydroRoll-Team/infini" },
-  { label = "IPM", href = "https://github.com/HydroRoll-Team/ipm" },
-]
-body = "面向内容生成的 Python 输入输出流框架及其包管理器，本人为项目核心贡献者。"
-
-[[projects]]
-title = "Oblivion 加密传输协议"
+title = "Oblivion 加密协议"
 subtitle = "个人开源项目"
 period = "2023 年 10 月 – 2024 年 06 月"
 stack = [ "Rust", "网络", "高并发", "服务端框架", "传输协议", "加密算法" ]
 links = [ { label = "GitHub", href = "https://github.com/noctisynth/oblivion-rust" } ]
-body = "全双工端到端加密传输协议，使用 Rust 编写客户端与服务端框架。"
-highlights = [
-  "项目用于作为 WebSocket 的替代协议，能够在 1ms 以内实现本地回环握手；握手过程中基于 ECDHE 和 HKDF 进行密钥共享并生成 AES 密钥，长连接会话持续使用该密钥双向加密，并基于 MTU 动态分块发送数据包。",
-  "Oblivion 使用 tokio 作为异步驱动核心，使用 ring 作为加密原语库；基准测试显示其能够实现服务端异步安全下的高并发运行。",
-]
+body = "设计并实现基于 Rust 的**全双工端到端加密传输协议**及客户端、服务端框架。通过 **ECDHE 与 HKDF** 完成密钥协商与派生，使用 **AES** 加密双向通信，并实现**数据分块传输与重组**；结合 **Tokio 与 ring** 实现异步通信与密码学处理。"
 
 [[projects]]
-title = "Moonstone 月长石通讯"
+title = "Figstash"
 subtitle = "个人开源项目"
-period = "2023 年 11 月 – 2024 年 05 月"
-stack = [ "Rust", "Tauri", "前端", "后端", "桌面端", "去中心化" ]
-links = [ { label = "GitHub", href = "https://github.com/noctisynth/Moonstone" } ]
-body = "面向通讯安全的去中心化端到端加密即时通讯软件。"
-highlights = [
-  "Moonstone 基于 Oblivion 协议库实现全双工加密数据传输。",
-  "客户端页面基于 Vue.js，以社群为通讯单元，支持 Markdown 语法；使用 Tauri 2 集成前端并支持跨平台编译。",
-]
+period = "2026 年 08 月 – 今"
+stack = [ "Rust", "Figma", "Agent 工具", "内容寻址存储" ]
+links = [ { label = "GitHub", href = "https://github.com/noctisynth/figstash" } ]
+body = "开发面向 Agent 的 Figma 数据工具，基于 **BLAKE3 内容寻址与 zstd 压缩**保存不可变快照，实现**离线节点查询、设计上下文提取与结构化差异比较**，支持一次拉取后反复查询。"
+
+[[projects]]
+title = "Clip Bridge"
+subtitle = "个人开源项目"
+period = "2026 年 02 月 – 今"
+stack = [ "Rust", "Linux", "X11", "Wayland", "异步通信" ]
+links = [ { label = "GitHub", href = "https://github.com/noctisynth/clip-bridge" } ]
+body = "基于 Rust 实现 **X11 与 Wayland 间的双向纯文本剪贴板同步**，处理协议能力协商、文本编码转换与分块传输；通过**状态机、版本校验及有界消息通道**处理异步事件，避免过期结果覆盖当前内容。"
+
+[[projects]]
+title = "Neural Memory ODE"
+subtitle = "学术开源项目"
+period = "2024 年 08 月 – 2025 年 03 月"
+stack = [ "Python", "PyTorch", "GPU 并行计算", "神经常微分方程" ]
+links = [ { label = "GitHub", href = "https://github.com/Couplatis/nmode/" } ]
+body = "参与徐芳教授指导的学术项目，基于 **Neural Memory ODE** 模型开展神经网络实现与 **GPU 并行化计算**，引入含指数项的非线性表达，并在 **CIFAR-10** 数据集上进行训练实验。"
+
+[[projects]]
+title = "tsdown"
+extra = { section = "contributions" }
+links = [ { label = "Workspace", href = "https://github.com/rolldown/tsdown/commit/6f9629c5220c2c7cb608bfa1cd5c0568f2f9c696" }, { label = "环境变量", href = "https://github.com/rolldown/tsdown/pull/152" } ]
+body = "参与 **Workspace 支持的设计与开发**，推进工作区成员发现、配置加载与继承；实现**编译期环境变量注入**，支持 CLI 与配置文件设置。"
+
+[[projects]]
+title = "Aube"
+extra = { section = "contributions" }
+links = [ { label = "依赖解析", href = "https://github.com/aubepkg/aube/pull/756" }, { label = "工作区", href = "https://github.com/aubepkg/aube/pull/757" } ]
+body = "完善**并发依赖解析的错误处理**，避免可选依赖获取失败中断整体解析；修复**工作区根包依赖的解析与链接**，补充回归测试。"
+
+[[projects]]
+title = "Citty"
+extra = { section = "contributions" }
+links = [ { label = "默认子命令", href = "https://github.com/unjs/citty/pull/156" }, { label = "别名", href = "https://github.com/unjs/citty/pull/236" } ]
+body = "实现**默认子命令**，支持参数传递与配置冲突校验；参与**子命令别名支持**，相关实现经上游整合合入。"
+
+[[projects]]
+title = "Tauri"
+extra = { section = "contributions" }
+links = [ { label = "PR", href = "https://github.com/tauri-apps/tauri/pull/10504" } ]
+body = "完善 **CLI 初始化时的包管理器识别**，补充 Bun 检测，并根据项目环境生成开发与构建命令默认值。"
+
+[[projects]]
+title = "pnpm / mise / Starship"
+extra = { section = "contributions" }
+links = [ { label = "pnpm", href = "https://github.com/pnpm/pnpm/pull/13990" }, { label = "mise", href = "https://github.com/jdx/mise/pull/7213" }, { label = "Starship", href = "https://github.com/starship/starship/pull/6145" } ]
+body = "修复 **pnpm Rust 实现中 Windows 跨盘存储路径**的规范化问题，避免特殊路径前缀导致 CI 缓存工具解析失败；修复 **mise 的 Nushell 环境停用脚本**及 **Starship 的 Python 虚拟环境配置**中的字符串处理问题，并补充回归测试。"
+
+[[projects]]
+title = "snapDOM"
+extra = { section = "contributions" }
+links = [ { label = "PR", href = "https://github.com/zumerlab/snapdom/pull/156" } ]
+body = "修复 **DOM 截图中伪元素的边框可见性判断**，避免零宽边框被误判为可见。"
 
 [[awards]]
 title = "国家级大创项目验收成功"

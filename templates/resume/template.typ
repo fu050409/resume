@@ -178,8 +178,8 @@
       #let grouped-awards = data.awards.filter(award => award.date == award-date)
       #let award-rows = ()
       #for (index, award) in grouped-awards.enumerate() {
-        let award-copy = block(width: 100%)[
-          #set par(leading: 0.32em)
+        let award-copy = block(width: 100%, breakable: false)[
+          #set par(justify: false, leading: 0.32em)
           #text(size: 0.7em, award.title)
           #let level = award.at("level", default: none)
           #if level != none [
@@ -199,8 +199,8 @@
         )
         award-rows.push(title-row)
       }
-      #stack(spacing: 0.2em, ..award-rows)
-      #v(0.18em)
+      #stack(spacing: 0.55em, ..award-rows)
+      #v(0.6em)
     ]
   ]
 ]
@@ -255,7 +255,8 @@
   ]
   #if data.projects.len() > 0 [
     == #icons.fa-code 项目经历
-    #for it in data.projects [
+    #for it in data.projects.filter(it => it.at("extra", default: (:)).at("section", default: "") != "contributions") [
+      #block(breakable: false)[
       #item(
         {
           let links = it.at("links", default: ())
@@ -277,6 +278,22 @@
       #let highlights = it.at("highlights", default: ())
       #if highlights.len() > 0 [
         #list(..highlights.map(h => [- #h]))
+      ]
+      ]
+    ]
+  ]
+  #let contributions = data.projects.filter(it => it.at("extra", default: (:)).at("section", default: "") == "contributions")
+  #if contributions.len() > 0 [
+    == #icons.fa-code 开源贡献
+    #for it in contributions [
+      #block(breakable: false, above: 0.7em, below: 0.2em)[
+        #if it.title == "pnpm / mise / Starship" {
+          it.links.map(entry => link(entry.href, strong(entry.label))).join(" / ")
+        } else {
+          link(it.links.first().href, strong(it.title))
+        }
+        #linebreak()
+        #rich-body(it.body)
       ]
     ]
   ]
