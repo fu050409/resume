@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.3
+
+### Bug Fixes
+
+- [`8856aa9`](https://github.com/fu050409/resume/commit/8856aa9f1ab59e52bc40bada09c3562b3663815e): Update the Southwest Petroleum University education period to September 2023 through June 2027.
+
 ## v0.1.2
 
 ### Bug Fixes
