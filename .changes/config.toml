@@ -17,3 +17,4 @@ github-release = true
 
 [resolver.nodejs.pre-check]
 url = "https://registry.npmjs.org/{{ package.name }}/{{ package.version }}"
+type = "http"
